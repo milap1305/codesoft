@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+.button {
+	width: 66px;
+	padding: 20px;
+	margin: 0 3px;
+	font-weight: bold;
+	border: 2px solid rgb(11, 4, 54);
+	border-radius: 9px;
+	cursor: pointer;
+	
+}
+button::after {
+	pointer-events: none;
+	content: "";
+	position: absolute;
+	top: 10%;
+	left: 0%;
+	height: 200%;
+	width: 100%;
+	background-color: var(--glow-spread-color);
+	filter: blur(500.5em);
+	opacity: 0.5;
+	transform: perspective(em) rotateX(0.8deg) scale(1, 0.);
+	box-shadow: inset 0 0 10px rgb(255, 255, 255);
+} 
+
+button:hover {
+	color: var(--btn-color);
+	background-color: var(--glow-color);
+	box-shadow: 0 0 2em var(--glow-color),
+		0 0 5em 0.1em var(--glow-spread-color),
+		inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+
+.row {
+	margin: 8px 0;
+	
+}
+
+.row input {
+	width: 291px;
+	height: 55px;
+	font-size: 55px;
+	margin: 0;
+	padding: 10px 0px;
+	/* border: 2px solid rgb(37, 8, 163); */
+	border-radius: 5px;
+}
+
+.row input {
+	font-family: 'Courier New', monospace;
+	font-size: 24px;
+}
+.row input {
+
+	border-radius: 8px;
+	text-align: right;
+	font-weight: bold;
+	color: rgb(37, 13, 84);
+	box-shadow: inset 0 0 3px rgb(49, 13, 234);
+}
